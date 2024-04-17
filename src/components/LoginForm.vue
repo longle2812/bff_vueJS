@@ -27,7 +27,7 @@ const route = useRoute()
 onMounted(async () => {
   // Fetch login options from the BFF
   debugger;
-  const response = await fetch('bff/login-options')
+  const response = await fetch('/bff/login-options')
   const opts = (await response.json()) as LoginOptionDto[]
   if (opts.length) {
     loginUri.value = opts[0].loginUri

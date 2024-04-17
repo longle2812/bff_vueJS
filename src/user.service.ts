@@ -42,7 +42,7 @@ export class UserService {
     if (this.refreshIntervalId) {
       clearInterval(this.refreshIntervalId)
     }
-    const response = await fetch(`bff/api/me`)
+    const response = await fetch(`/bff/api/me`)
     const user = (await response.json()) as UserinfoDto
     if (
       user?.username !== this.current?.value?.name ||

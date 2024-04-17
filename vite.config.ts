@@ -15,7 +15,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/vue-ui/',
+  base: '/vue-ui',
   server: {
     host: "0.0.0.0",
     port: 4202,
